@@ -76,7 +76,7 @@ fig.show()
 
 
 
-## Creating the Trading Strategy
+# Creating the Trading Strategy
 
 def implement_bb_strategy(data, lower_bb, upper_bb):
     buy_price = []
@@ -91,20 +91,24 @@ def implement_bb_strategy(data, lower_bb, upper_bb):
                 sell_price.append(np.nan)
                 signal = 1
                 bb_signal.append(signal)
+                
             else:
                 buy_price.append(np.nan)
                 sell_price.append(np.nan)
                 bb_signal.append(0)
+                
         elif df['Close'][i-1] < df['Upper Band'][i-1] and df['Close'][i] > df['Upper Band'][i]:
             if signal != -1:
                 buy_price.append(np.nan)
                 sell_price.append(df['Close'][i])
                 signal = -1
                 bb_signal.append(signal)
+                
             else:
                 buy_price.append(np.nan)
                 sell_price.append(np.nan)
                 bb_signal.append(0)
+                
         else:
             buy_price.append(np.nan)
             sell_price.append(np.nan)
