@@ -1,6 +1,6 @@
 # Trading-strategies
 
-**Bollinger Bands - short introduction**
+**1/ Bollinger Bands**
 
 There are three bands of this indicator :
 
