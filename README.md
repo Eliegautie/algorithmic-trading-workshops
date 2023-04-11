@@ -6,7 +6,7 @@ There are three bands of this indicator :
 
 - The mid band is the moving average on the price series (usually takes **20** lags). 
 - The upper and lower bands are **two** moving standard deviations away from the mid band. 
-- 
+ 
 Bollinger Bands can be used to test for various types of strategies :
 
 - For *volatility trading*, contraction and expansion of the band width are crucial elements. Any distinct momentum clustering (it can take form of either upward or downward) would result in a Bollinger Bands expansion. And the oscillation in a horizontal channel would result in a Bollinger Bands contraction.
