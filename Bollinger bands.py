@@ -73,3 +73,57 @@ fig.update_layout(
 # Show Figure
 
 fig.show()
+
+
+
+# Creating the Trading Strategy
+
+def implement_bb_strategy(data, lower_bb, upper_bb):
+    buy_price = []
+    sell_price = []
+    bb_signal = []
+    signal = 0
+    
+    for i in range(1,len(df)):
+        if df['Close'][i-1] > df['Lower Band'][i-1] and df['Close'][i] < df['Lower Band'][i]:
+            if signal != 1:
+                buy_price.append(df['Close'][i])
+                sell_price.append(np.nan)
+                signal = 1
+                bb_signal.append(signal)
+            else:
+                buy_price.append(np.nan)
+                sell_price.append(np.nan)
+                bb_signal.append(0)
+        elif df['Close'][i-1] < df['Upper Band'][i-1] and df['Close'][i] > df['Upper Band'][i]:
+            if signal != -1:
+                buy_price.append(np.nan)
+                sell_price.append(df['Close'][i])
+                signal = -1
+                bb_signal.append(signal)
+            else:
+                buy_price.append(np.nan)
+                sell_price.append(np.nan)
+                bb_signal.append(0)
+        else:
+            buy_price.append(np.nan)
+            sell_price.append(np.nan)
+            bb_signal.append(0)
+            
+    return buy_price, sell_price, bb_signal
+
+buy_price, sell_price, bb_signal = implement_bb_strategy(df['Close'], df['Lower Band'], df['Upper Band'])
+
+# Plotting the Trading lists
+
+df['Close'].plot(label = 'Close Prices', alpha = 0.3)
+df['Upper Band'].plot(label = 'Upper Band', linestyle = '--', linewidth = 1, color = 'red')
+df['Middle Band'].plot(label = 'Middle Band', linestyle = '--', linewidth = 1.2, color = 'blue')
+df['Lower Band'].plot(label = 'Lower Band', linestyle = '--', linewidth = 1, color = 'green')
+plt.scatter(df.index[:-1], buy_price, marker = '^', color = 'green', label = 'Buy', s = 100)
+plt.scatter(df.index[:-1], sell_price, marker = 'v', color = 'red', label = 'Sell', s = 100)
+plt.title('BNP Bollinger Band Strategy Trading Signals')
+plt.legend(loc = 'upper right')
+plt.ylabel('Price', fontsize=12)
+plt.xlabel('time', fontsize=12)
+plt.show()
