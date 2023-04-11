@@ -76,7 +76,7 @@ fig.show()
 
 
 
-# Creating the Trading Strategy
+## Creating the Trading Strategy
 
 def implement_bb_strategy(data, lower_bb, upper_bb):
     buy_price = []
