@@ -1,3 +1,5 @@
+# https://medium.com/codex/algorithmic-trading-with-bollinger-bands-in-python-1b0a00c9ef99
+
 import numpy as np
 import matplotlib.pyplot as plt 
 import pandas as pd
