@@ -1,14 +1,12 @@
-# Trading-strategies
+**Algorithmic trading courses**
 
-**1/ Bollinger Bands**
+- For almost a year, I have been working on developing my coding and data analysis skills in close collaboration with the two founders of Profitview Richard Hickling and Jahan Zahid (https://profitview.net/). After several months of training, taking courses on Codecademy, testing my skills on Codility, and building the premise of a Bitcoin trading algo (programming with Jahan), I now have a decent level of programming.
 
-There are three bands of this indicator :
 
-- The mid band is the moving average on the price series (usually takes **20** lags). 
-- The upper and lower bands are **two** moving standard deviations away from the mid band. 
- 
-Bollinger Bands can be used to test for various types of strategies :
+- Since March, Profitview has launched a series of webinars in which participants, supervised by Jahan, backtest and deploy an algorithmic trading strategy in a real-world environment. These webinars are the beginnings of an algorithmic trading course that should start soon, where we will work on building an effective algorithmic trading program. You can find the work done so far in these webinars here: https://github.com/profitviews/workshops. 
 
-- For *volatility trading*, contraction and expansion of the band width are crucial elements. Any distinct momentum clustering (it can take form of either upward or downward) would result in a Bollinger Bands expansion. And the oscillation in a horizontal channel would result in a Bollinger Bands contraction.
 
-- For *momentum trading*, the phenomenon of 'walking the band' indicates the resistance and support level of the underlying asset. In a strong trend, the price constantly attempts to touch or break through the upper/lower band along with Bollinger Bands moving towards the same direction.
+- In addition to taking these courses, I also subscribed to the algorithmic trading platform Profitview (Hobbyist), which allows me to get live data from different exchanges and build my algorithm more easily. You can see the basics of the trading robot here: https://profitview.net/docs/trading/?utm_source=convertkit&utm_medium=email&utm_campaign=Workshop+Replay%3A+Algorithmic+Trading+with+Python+part+2%20-%2010531534
+
+- In this repository, I will backtest trading strategies that I can then offer to other course attendees for advice, and implement them in a live environment, using the ProfitView trading robot.
+
