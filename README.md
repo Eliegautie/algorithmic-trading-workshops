@@ -1,4 +1,4 @@
-**Algorithmic trading courses**
+## Algorithmic trading courses
 
 - For almost a year, I have been working on developing my coding and data analysis skills in close collaboration with the two founders of Profitview Richard Hickling and Jahan Zahid (https://profitview.net/). After several months of training, taking courses on Codecademy, testing my skills on Codility, and building the premise of a Bitcoin trading algo (working with Jahan), I now have a decent level of programming.
 
