@@ -9,7 +9,7 @@
 - In addition to taking these courses, I also subscribed to the algorithmic trading platform Profitview (Hobbyist), which allows me to get live data from different exchanges and build my algorithm more easily. You can see the basics of the ProfitView Trading Bots tab here: 
 https://profitview.net/docs/trading/?utm_source=convertkit&utm_medium=email&utm_campaign=Workshop+Replay%3A+Algorithmic+Trading+with+Python+part+2%20-%2010531534
 
-- In this repository, my goal is to develop trading strategies, which I could then propose during workshops before implementing them in a real environment with ProfitView Trading bot.
+- In this repository, my goal is to develop and backtest trading strategies, which I could then propose during workshops before implementing them in a real environment with ProfitView Trading bot.
 
-- All strategies in this repository are designed to be inserted into the ProfitView Trading Bots tab.
+
 
