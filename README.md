@@ -26,8 +26,9 @@ H which is the average of the increases over the last X Units of Time.
 
 B which is the average of the decreases during the X last X Units of Time.
 
-RSI > 70: it means that the market is probably overbought.
-RSI < 30: it means that the market is probably oversold
+RSI > 70 : it means that the market is probably overbought.  
+
+RSI < 30 : it means that the market is probably oversold
 
 
 - First, we need to get an idea of how often the RSI occurs with a value above 70 or below 30 in our time series. To do this, we compute the RSI with Talib and plot the frequency of the different RSI levels in 100 bins (**Fig.1**). We can see that the histogram is bell-shaped and that values above 70 or below 30 are less dominant.
