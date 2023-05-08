@@ -14,9 +14,9 @@ https://profitview.net/docs/trading/?utm_source=convertkit&utm_medium=email&utm_
 
 ## Trading Strategies:  
 
-*RSI* 
+**RSI** 
 
--This strategy is based on the Relative Strength Indicator (RSI). This indicator allows to know 2 things: the power of a trend and indicates if the market is overbought or oversold.
+This strategy is based on the Relative Strength Indicator (RSI). This indicator allows to know 2 things: the power of a trend and indicates if the market is overbought or oversold.
 
 The classic RSi formula is as follows: RSI= 100 - [100/(1+ up_ewm/down_ewm)]
 
