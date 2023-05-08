@@ -37,7 +37,7 @@ RSI < 30 : it means that the market is probably oversold
 From this chart, I can assume that the strategy should produce interesting results.
 
 - **Trading idea**: I want to know, given the current closing prices, what the "hypothetical" RSI would be if the price rose by 2% (**Fig.3**).
-To do this, we use the hypo_rsi function. The reason for this function in this algo is that I can use it to set limit orders when the RSI is at any level. To do this, I need to solve the inverse equation: what return do I need to get a given ROI?
+To do this, we use the hypo_rsi function. The reason for this function in this algo is that I can use it to set limit orders when the RSI is at any level. To do this, I need to solve the inverse equation: what return do I need to get a given RSI?
 
 - This is exactly what I did next. First, I calculated the RSI manually with the exponential weighted moving average and got the same results as with Talib. Then, given the current RSI, the current average of the increases over the last 14 minutes (up_ewm) and the current average of the decreases over the last 14 minutes (down_ewm), what would be the "hypothetical" returns if the RSI were to increase by 1 point for example
 
