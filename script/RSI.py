@@ -17,29 +17,6 @@ TIME_LOOKUP = {
     '1d':  60_000 * 60 * 24,    
 }
 
-def debounce(wait):
-    """Postpone a function execution until after wait seconds
-    have elapsed since the last time it was invoked. 
-    source: https://gist.github.com/walkermatt/2871026"""
-    def decorator(func):
-        def debounced(*args, **kwargs):
-            def call_func():
-                debounced.last_call = time.time()
-                func(*args, **kwargs)
-            
-            if hasattr(debounced, 'timer'):
-                debounced.timer.cancel()
-            
-            if time.time() - getattr(debounced, 'last_call', 0) > wait:
-                call_func()
-            else:                
-                debounced.timer = threading.Timer(wait, call_func)
-                debounced.timer.start()                
-
-        return debounced
-    return decorator
-
-
 
 class Trading(Link):
     
