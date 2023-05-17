@@ -39,6 +39,7 @@ class Trading(Link):
         
         # ALGO PARAMS        
         self.fee_cost = 4e-4                        # cost of entering and exiting position
+	self.max_risk = 200                         # max position risk limit
         
         # RUN ON STARTUP
         self.on_startup()
