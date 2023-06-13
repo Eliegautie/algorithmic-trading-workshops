@@ -17,6 +17,7 @@ TIME_LOOKUP = {
 }
 
 # GARCH parameters
+# We use the GARCH Model to forecast volatility, in order to choose the right spread (whether it is necessary to tighten or widen the spread)
 OMEGA = 1.605025e-08
 ALPHA = 0.193613
 BETA = 0.786155
